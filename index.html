@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awakening AI</title>
+<meta name="description" content="Awakening AI: a multimodal agent that listens, sees, reads emotion, remembers and acts. The ad, the live demo, and the full architecture walkthrough.">
+<meta property="og:title" content="Awakening AI">
+<meta property="og:description" content="The ad, the live demo, and the full architecture walkthrough.">
+<meta property="og:image" content="posters/ad.jpg">
+<meta property="og:type" content="video.other">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root { --bg: #000; --ink: #f5f5f7; --grey: #8e8e93; --line: #1d1d20; --accent: #ff6a2b; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 500 17px/1.6 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; }
+  header { padding-block: 80px 48px; }
+  .eyebrow { font: 500 13px 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0; }
+  h1 { font-size: clamp(56px, 10vw, 120px); font-weight: 800; letter-spacing: -.05em; line-height: .95; margin: 18px 0 20px; }
+  h1 i { display: inline-block; width: .16em; height: .16em; border-radius: 50%; background: var(--accent); margin-left: .04em; }
+  .lede { font-size: 21px; color: var(--grey); max-width: 46ch; margin: 0; }
+  .lede b { color: var(--ink); font-weight: 600; }
+  nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  nav a { color: var(--ink); text-decoration: none; border: 1px solid #2c2c30; border-radius: 999px; padding: 9px 16px; font-size: 15px; }
+  nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+  section { border-top: 1px solid var(--line); padding-block: 56px; }
+  section h2 { font-size: clamp(30px, 4.4vw, 46px); font-weight: 700; letter-spacing: -.035em; line-height: 1.05; margin: 10px 0 8px; }
+  section p.sub { color: var(--grey); margin: 0 0 26px; max-width: 62ch; }
+  video { display: block; width: 100%; border-radius: 18px; background: #0b0b0d; border: 1px solid var(--line); }
+  .demo { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 40px; align-items: center; }
+  .demo video { aspect-ratio: 9 / 16; }
+  .demo ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .demo li { color: var(--grey); }
+  .demo li b { color: var(--ink); font-weight: 600; }
+  .dl { display: inline-block; margin-top: 16px; font: 500 13px 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .08em; color: var(--grey); }
+  .dl a { color: var(--ink); }
+  footer { border-top: 1px solid var(--line); padding-block: 36px 60px; color: var(--grey); font-size: 15px; }
+  @media (max-width: 760px) { .demo { grid-template-columns: minmax(0, 1fr); } .demo video { max-width: 380px; margin-inline: auto; } header { padding-top: 56px; } }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="eyebrow">Om Prakash Bharadwaj · Project</p>
+    <h1>Awakening AI<i></i></h1>
+    <p class="lede">A multimodal AI agent that <b>listens</b>, <b>sees</b>, <b>reads emotion</b>, <b>remembers</b> and <b>acts</b>, in any language, through a live avatar.</p>
+    <nav aria-label="Videos">
+      <a href="#ad">The ad · 0:40</a>
+      <a href="#demo">Live demo · 2:49</a>
+      <a href="#walkthrough">Architecture walkthrough · 12:57</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="ad" class="wrap">
+      <p class="eyebrow">The ad</p>
+      <h2>The AI that listens.</h2>
+      <p class="sub">Forty seconds on what makes Awakening AI different, cut from the live demo.</p>
+      <video controls playsinline preload="metadata" poster="posters/ad.jpg" src="videos/awakening-ai-ad.mp4"></video>
+      <span class="dl">Direct link: <a href="videos/awakening-ai-ad.mp4">awakening-ai-ad.mp4</a></span>
+    </section>
+
+    <section id="demo" class="wrap">
+      <p class="eyebrow">Live demo</p>
+      <h2>A real conversation.</h2>
+      <p class="sub">The agent on a live call: real-time voice, the avatar, and an emotional read of how things are said, not just what is said.</p>
+      <div class="demo">
+        <video controls playsinline preload="metadata" poster="posters/demo.jpg" src="videos/awakening-ai-live-demo.mp4"></video>
+        <ul>
+          <li><b>Hears tone, not just words.</b> “Yeah, everything is fine,” said in a distant voice, gets: “Well, you don’t sound particularly fine.”</li>
+          <li><b>Answers fast.</b> About 1.5 seconds from the person’s last word to the agent’s first, measured in this recording.</li>
+          <li><b>Has a presence.</b> Voice and a customizable avatar that react to the conversation.</li>
+        </ul>
+      </div>
+      <span class="dl">Direct link: <a href="videos/awakening-ai-live-demo.mp4">awakening-ai-live-demo.mp4</a></span>
+    </section>
+
+    <section id="walkthrough" class="wrap">
+      <p class="eyebrow">Architecture walkthrough</p>
+      <h2>Seven layers, one loop.</h2>
+      <p class="sub">A narrated, animated walkthrough of how it works: perception, language, the trained affect model, dialogue and reasoning, persistent memory, permissioned actions, and expression.</p>
+      <video controls playsinline preload="metadata" poster="posters/lesson.jpg" src="videos/awakening-ai-layer-by-layer.mp4"></video>
+      <span class="dl">Direct link: <a href="videos/awakening-ai-layer-by-layer.mp4">awakening-ai-layer-by-layer.mp4</a></span>
+    </section>
+  </main>
+
+  <footer class="wrap">Built by Om Prakash Bharadwaj · <a href="https://github.com/ombdj1209" style="color:inherit">github.com/ombdj1209</a></footer>
+</body>
+</html>
